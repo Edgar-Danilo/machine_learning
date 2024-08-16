@@ -14,6 +14,6 @@ def precios():
 datos = yf.Ticker('BTC-USD')
 #marker = datos.info["marketCap"]
 
-precios = datos.history(period = "max")
-#precios = datos.history(start = "2020-01-01", end = "2021-01-01")
+#precios = datos.history(period = "max")
+precios = datos.history(start = "2020-01-01", end = "2021-01-01")
 print(precios)
